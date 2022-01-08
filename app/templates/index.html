@@ -1,0 +1,257 @@
+
+
+<body>
+    <center>
+        <img src="{{href}}" height=600 /> <!-- static/baseimage.svg -->
+        <form method="POST">
+            <label>Input a comma-separated list of features (16)</label>
+            <input name="text"style="height:30px; width:500px;">
+            <input type="submit">
+        </form>
+    </center>
+
+    <h2>Variable Descriptions for Obesity Data Set</h2>
+
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .tg td {
+            background-color: #fff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-1wig {
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-if4e {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-buh4 {
+            background-color: #f9f9f9;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-txu4 {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-3o7t {
+            background-color: #f9f9f9;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-fymr {
+            border-color: inherit;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-f8tv {
+            border-color: inherit;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-btxf {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-8zwo {
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-797t {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-fymr">Variable Name</th>
+                <th class="tg-fymr">Variable Description</th>
+                <th class="tg-fymr">Variable Type</th>
+                <th class="tg-fymr">Variable Range</th>
+                <th class="tg-fymr">Example Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="tg-fymr">Gender</th>
+                <th class="tg-f8tv">1= female, 2 = male</th>
+                <th class="tg-0pky">Binary</th>
+                <th class="tg-0pky">0-1</th>
+                <th class="tg-0pky">0</th>
+            </tr>
+            <tr>
+                <td class="tg-if4e">Age</td>
+                <td class="tg-txu4">Age of the person</td>
+                <td class="tg-btxf">Continuous</td>
+                <td class="tg-btxf">14.0-61.0</td>
+                <td class="tg-btxf">23.0</td>
+            </tr>
+            <tr>
+                <td class="tg-fymr">Height</td>
+                <td class="tg-f8tv">Height of the person in meters</td>
+                <td class="tg-0pky">Continuous</td>
+                <td class="tg-0pky">1.45-1.98</td>
+                <td class="tg-0pky">1.62</td>
+            </tr>
+            <tr>
+                <td class="tg-if4e">Weight</td>
+                <td class="tg-txu4">Weight of the person in kilograms</td>
+                <td class="tg-btxf">Continuous</td>
+                <td class="tg-btxf">39.0-173.0</td>
+                <td class="tg-btxf">89.8</td>
+            </tr>
+            <tr>
+                <td class="tg-fymr">family_history_with_overweight</td>
+                <td class="tg-f8tv">Family history of obesity: 1 = yes, 2 = no</td>
+                <td class="tg-0pky">Binary</td>
+                <td class="tg-0pky">0-1</td>
+                <td class="tg-0pky">1</td>
+            </tr>
+            <tr>
+                <td class="tg-if4e">FAVC</td>
+                <td class="tg-txu4">Whether the person eats high caloric food frequently: 1 = yes, 2 = no</td>
+                <td class="tg-btxf">Binary</td>
+                <td class="tg-btxf">0-1</td>
+                <td class="tg-btxf">0</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">FCVC</td>
+                <td class="tg-8zwo">If the person usually eats vegetables in meals </td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">1.0-3.0</td>
+                <td class="tg-0lax">2.0</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">NCP</td>
+                <td class="tg-3o7t">How many main meals does the person have daily</td>
+                <td class="tg-buh4">Multiclass</td>
+                <td class="tg-buh4">1.0-4.0</td>
+                <td class="tg-buh4">3.0</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">CAEC</td>
+                <td class="tg-8zwo">Does the person eat any food between meals</td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">0-3</td>
+                <td class="tg-0lax">2</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">SMOKE</td>
+                <td class="tg-3o7t">Whether the person smokes: 1= yes, 2= no</td>
+                <td class="tg-buh4">Binary</td>
+                <td class="tg-buh4">0-1</td>
+                <td class="tg-buh4">1</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">CH2O</td>
+                <td class="tg-8zwo">How much water does the person drink daily</td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">1.0-3.0</td>
+                <td class="tg-0lax">2.0</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">SCC</td>
+                <td class="tg-3o7t">Does the person monitor the calories you eat daily</td>
+                <td class="tg-0lax">Binary</td>
+                <td class="tg-0lax">0-1</td>
+                <td class="tg-0lax">1</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">FAF</td>
+                <td class="tg-0lax">How often does the person have physical activity</td>
+                <td class="tg-buh4">Multiclass</td>
+                <td class="tg-buh4">0.0-3.0</td>
+                <td class="tg-buh4">2.0</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">TUE</td>
+                <td class="tg-3o7t">How much time does the person use technological devices such as cell phone, videogames, television, computer and others</td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">0.0-2.0</td>
+                <td class="tg-0lax">1.0</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">CALC</td>
+                <td class="tg-3o7t">how often does the person drink alcohol</td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">0-3</td>
+                <td class="tg-0lax">3</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">MTRANS</td>
+                <td class="tg-3o7t">Which transportation does the person usually use</td>
+                <td class="tg-0lax">Multiclass</td>
+                <td class="tg-0lax">0-4</td>
+                <td class="tg-0lax">2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>>
